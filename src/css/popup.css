@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    width: 400px;
+    height: 100px;
+
+}
+body {
+    background-color: #B5E2FA;
+}
+
+.header {
+    background-color: #0FA3B1;
+}
+
+.header a {
+    text-align: right;
+    margin-right: 50px;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+.header {
+    height: 40px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+.logo-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.startButton {
+    border-radius: 50px !important; 
+    background-color: #87F0B7;
+    border: solid 3px #0FB150;
+    height: 45px !important;
+    width: 100px !important;
+}

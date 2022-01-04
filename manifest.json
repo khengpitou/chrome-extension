@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Auto Attendant",
+    "description": "auto take attendant for google meeting",
+    "version": "0.1",
+
+    "browser_action": {
+		"default_popup": "./src/html/popup.html"
+    },
+    
+    "icons": {
+        "128": "./images/google-meet-conferencing-solutions-logo.png"
+    }
+}
