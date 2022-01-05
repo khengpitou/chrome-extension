@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Cairo', sans-serif;
-    width: 400px;
-    height: 100px;
+    width: 450px;
+    height: 80px;
 
 }
 body {
@@ -25,6 +25,10 @@ body {
     height: 40px;
 }
 
+.timerDisplay {
+    margin-left: 300px;
+}
+
 .logo {
     height: 50px;
     width: 50px;
@@ -40,22 +44,21 @@ body {
     height: 45px !important;
     width: 100px !important;
 }
-.stopButton {
-    border-radius: 50px !important; 
-    background-color: #eb724e;
-    border: solid 3px #d84206;
+
+
+
+#stopButton{
+    visibility: hidden;
+    background-color: #EEC5C5;
+    border: solid 3px #E57575;
     height: 45px !important;
     width: 100px !important;
-
 
 }
-.attendanceButton{
-    border-radius: 50px !important; 
-    background-color: #87F0B7;
-    border: solid 3px #0FB150;
+#attendantButton {
+    visibility: hidden;
+    background-color: #E0F6F8;
+    border: solid 3px #0FA3B1;
     height: 45px !important;
     width: 100px !important;
-    float: right;
-    margin-right: 30px;
-    
 }
