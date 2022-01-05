@@ -40,3 +40,22 @@ body {
     height: 45px !important;
     width: 100px !important;
 }
+.stopButton {
+    border-radius: 50px !important; 
+    background-color: #eb724e;
+    border: solid 3px #d84206;
+    height: 45px !important;
+    width: 100px !important;
+
+
+}
+.attendanceButton{
+    border-radius: 50px !important; 
+    background-color: #87F0B7;
+    border: solid 3px #0FB150;
+    height: 45px !important;
+    width: 100px !important;
+    float: right;
+    margin-right: 30px;
+    
+}
