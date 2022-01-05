@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    line-height: 2;
+}
+
+.instruction {
+
+    background-color: #B5E2FA;
+    height: 135px;
+}
+.instruction-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px !important; 
+}
+
+.info {
+    visibility: hidden;
+
+}
+
+.instruction-button:hover + .info{
+    visibility: visible;
+}
+.startButton {
+    border-radius: 50px !important; 
+    background-color: #87F0B7 !important;
+    border: solid 3px #0FB150 !important;
+    height: 45px !important;
+    width: 100px !important;
+}
+
+.stopButton{
+    border-radius: 50px !important; 
+    background-color: #EEC5C5 !important;
+    border: solid 3px #E57575 !important;
+    height: 45px !important;
+    width: 100px !important;
+}
+
+.exportButton {
+    border-radius: 50px !important; 
+    background-color: #fff !important;
+    border: solid 3px #0FA3B1 !important;
+    height: 45px !important;
+    width: 110px !important;
+}
+
+.attendantButton {
+    border-radius: 50px !important; 
+    background-color: #E0F6F8 !important;
+    border: solid 3px #0FA3B1 !important;
+    height: 45px !important;
+    width: 100px !important;
+}
+
+@media screen and (max-width: 990px) {
+    .instruction {
+        background-color: #B5E2FA !important;
+        height: 100%;
+    }
+}
