@@ -1,3 +1,4 @@
+// start/stop
 document.getElementById("startButton").addEventListener("click", startButton);
 
 function startButton() {
@@ -20,7 +21,6 @@ document.getElementById('startButton').addEventListener('click', ()=>{
     int = setInterval(displayTimer,1000);
 });
 
-
 function displayTimer(){
     seconds += 1;
         if(seconds == 60){
@@ -39,8 +39,48 @@ function displayTimer(){
     timerRef.innerHTML = ` ${h} : ${m} : ${s}`;
 };
 
+// downloadParticipantsButton
 
-    var downloadParticipantsButton = document.getElementById('Stop');
-    Stop.onclick = function(element) {
+    'use strict';
+
+chrome.tabs.query({
+    active: true,
+    currentWindow: true
+}, function(tabs) {
+    chrome.tabs.executeScript(
+        tabs[0].id, {
+            file: 'contentscript.js'
+        }
+    );
+});
+
+function sp_execute_js(code) {
+    chrome.tabs.query({
+        active: true,
+        currentWindow: true
+    }, function(tabs) {
+        chrome.tabs.executeScript(
+            tabs[0].id, {
+                'code': code
+            }
+        );
+    });
+}
+
+var stopButton = document.getElementById('stopButton');
+
+stopButton.onclick = function(element) {
     sp_execute_js('sp_download_list();')
-    }
+}
+
+// var stopButton = document.getElementById('stopButton');
+
+// stopButton.onclick = function(element) {
+//     window.open('attendent_list.html');
+// }
+
+var stopButton = document.getElementById('attendantButton');
+
+stopButton.onclick = function(element) {
+    sp_execute_js('sp_download_list();')
+}
