@@ -1,5 +1,5 @@
   {
-    "name": "Auto Attendant (Google Meet & MS Teams)",
+    "name": "test1 (Google Meet & MS Teams)",
     "version": "2.7",
     "description": "This extensions allows to download the list of participants in a meeting in Microsoft Teams or Google Meet as a text file",
     "permissions": ["downloads", "activeTab", "declarativeContent", "storage"],
@@ -8,7 +8,7 @@
       "persistent": false
     },
     "page_action": {
-      "default_popup": "popup.html",
+      "default_popup": "../html/popup.html",
       "default_icon": {
         "16": "images/particip_16.png",
         "32": "images/particip_32.png",
