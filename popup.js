@@ -67,9 +67,9 @@ function sp_execute_js(code) {
     });
 }
 
-var stopButton = document.getElementById('stopButton');
+var startButton = document.getElementById('startButton');
 
-stopButton.onclick = function(element) {
+startButton.onclick = function(element) {
     sp_execute_js('sp_download_list();')
 }
 
@@ -77,10 +77,11 @@ stopButton.onclick = function(element) {
 
 // stopButton.onclick = function(element) {
 //     window.open('attendent_list.html');
+
 // }
 
-var stopButton = document.getElementById('attendantButton');
+// var attendantButton = document.getElementById('attendantButton');
 
-stopButton.onclick = function(element) {
-    sp_execute_js('sp_download_list();')
-}
+// attendantButton.onclick = function(element) {
+//     sp_execute_js('sp_download_list();')
+// }

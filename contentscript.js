@@ -122,7 +122,7 @@ async function sp_google_meet_open_sidebar() {
         sidebar_btns[0].click();
     }
 
-    await sp_timeout(500);
+    await sp_timeout(300);
 }
 
 async function sp_microsoft_teams_get_participants_v2() {
